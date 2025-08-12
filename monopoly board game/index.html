@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกมเศรษฐีตรุษจีน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="board"></div>
+        <div id="center"></div>
+        <div id="players-info"></div>
+        <div id="status"></div>
+        <div id="buttons">
+            <button id="start-game">เริ่มเกมใหม่</button>
+            <button id="roll-dice" disabled>ทอยลูกเต๋า</button>
+            <button id="buy-property" disabled>ซื้อที่ดิน</button>
+            <button id="build-house" disabled>ซื้อบ้าน</button>
+            <button id="end-turn" disabled>จบเทิร์น</button>
+            <button id="show-special" title="รายการของพิเศษ">📃</button>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div id="modal-content">
+            <h2>รายการของพิเศษ</h2>
+            <ul id="special-list"></ul>
+            <button onclick="closeModal()">ปิด</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
